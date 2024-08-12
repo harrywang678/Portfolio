@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(0, 0%, 0%, 0.881);
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px;
+}
+
+.navbar h2 {
+  color: #ffb742;
+  font-weight: 600;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li:hover a {
+  color: #fb8c00;
+}
+
+.navbar ul li:last-child a {
+  margin-right: 0px;
+}
+
+.github-btn button {
+  background: #ffb742;
+  padding: 6px 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn button:hover {
+  background-color: #fb8c00;
+}
+
+.main {
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h4 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.main h4 span {
+  color: #ffb742;
+  text-decoration: underline;
+}
+
+.main .title {
+  font-size: 44px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.main .subtitle {
+  font-size: 16px;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+.main img {
+  margin-top: 100px;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #fff;
+  border-radius: 20%;
+  padding: 20px;
+}
+
+.main img:hover {
+  border-color: red;
+}
+
+.experience {
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.materials {
+  margin: 100px 0 100px 0;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.materials .item {
+  background-color: #292b2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0px 30px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.materials .item:hover {
+  border-color: #fb8c00;
+}
+
+.materials .item .icon {
+  background-color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.materials .item:hover .icon {
+  background-color: #fb8c00;
+}
+
+.materials .item i {
+  font-size: 30px;
+}
+
+.materials .bx.bx-chevron-right {
+  color: #fff;
+}
+
+.materials .item .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.materials .item .info p {
+  color: #fff;
+  font-weight: 600;
+}
+
+.separator {
+  margin: 1px 50px 30px;
+  background-color: hsla(0, 0%, 50%, 0.213);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #ffb742;
+}
+
+.about {
+  margin: 100px 0 100px 0;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  color: #ccccccac;
+}
+
+.about a {
+  text-decoration: none;
+}
+
+.about button {
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #ffb742;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 16px;
+}
+
+.about button i {
+  font-size: 23px;
+  text-align: center;
+}
+
+.about button:hover {
+  background-color: #fb8c00;
+}
+
+.skills {
+  margin: 100px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+  align-items: baseline;
+  gap: 100px;
+}
+
+.skills h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.skills .languages {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.skills .languages .item {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #292b2e;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.skills .languages .item i {
+  font-size: 34px;
+}
+
+.project {
+  margin: 100px 0 100px 0;
+  padding: 0 50px;
+}
+
+.project .title {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.project .items {
+  background-color: #292b2e;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+.project h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
+
+.project .info {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: relative;
+  background-color: #1c1c1c;
+  padding: 20px 50px;
+  margin-top: 100px;
+}
+
+footer .cols {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+footer .cols .about-cols {
+  flex: 3;
+}
+
+footer .cols .about-cols h3 {
+  color: #ffb742;
+  margin-bottom: 25px;
+}
+
+footer .cols p {
+  color: #ccc;
+  font-size: 13px;
+}
+
+footer .cols .links-cols {
+  flex: 2;
+}
+
+footer .cols .links-cols h4 {
+  color: #fff;
+}
+
+footer .cols .links-cols a {
+  display: block;
+  text-decoration: none;
+  color: #7b7b7b;
+  line-height: 26px;
+  transition: color 0.3s ease;
+}
+
+footer .cols .links-cols a:hover {
+  color: #ffb742;
+}
+
+@media screen and (max-width: 1100px) {
+  .materials {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .materials .item {
+    flex-basis: 49%;
+  }
+
+  .skills {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .skills h3 {
+    width: 500px;
+    font-size: 22px;
+  }
+
+  footer {
+    margin-top: 150px;
+  }
+
+  footer .cols {
+    flex-wrap: wrap;
+  }
+
+  footer .cols .about-cols {
+    flex-basis: 50%;
+  }
+
+  footer .cols .links-cols {
+    flex-basis: 25%;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skills h3 {
+    text-align: center;
+  }
+
+  .skills .languages {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .materials .item {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  footer .cols .about-cols {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  footer .cols .links-cols {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1392px) {
+  .main .title {
+    font-size: 30px;
+  }
+
+  .main h4 {
+    font-size: 25px;
+  }
+
+  .main .subtitle {
+    font-size: 13px;
+  }
+
+  .main img {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .main .title {
+    font-size: 25px;
+  }
+
+  .main h4 {
+    font-size: 20px;
+  }
+
+  .main .subtitle {
+    font-size: 11px;
+  }
+
+  .main img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .navbar .github-btn {
+    display: none;
+  }
+
+  .main .title {
+    font-size: 18px;
+  }
+
+  .main h4 {
+    font-size: 14px;
+  }
+
+  .main .subtitle {
+    font-size: 8px;
+  }
+
+  .main {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar h2 {
+    display: none;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+  }
+
+  .about h3 {
+    font-size: 15px;
+  }
+
+  .about p {
+    font-size: 8px;
+  }
+
+  .project .items .info p {
+    font-size: 10px;
+  }
+}
